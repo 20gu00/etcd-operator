@@ -134,6 +134,8 @@ API version: 3.4
 k8s源码提供案例test/e2e/testing-manifests/statefulset/etcd
 
 go mod tidy(go mod vendor,开启vendor,将依赖添加到vendor)
-make install 安装crd(config/crd)
+make install 安装crd(config/crd),将数据添加进crd(crd设置相关的)
 make run
 kubectl apply -f config/samples/aaa
+
+自定义列:
