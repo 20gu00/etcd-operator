@@ -125,6 +125,7 @@ type EtcdBackupStatus struct {
 }
 
 // +kubebuilder:object:root=true
+// +kubebuilder:subresource:status
 
 // EtcdBackup is the Schema for the etcdbackups API
 type EtcdBackup struct {

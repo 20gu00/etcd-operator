@@ -138,4 +138,4 @@ make install 安装crd(config/crd),将数据添加进crd(crd设置相关的)
 make run
 kubectl apply -f config/samples/aaa
 
-自定义列:
+go get go.etcd.io/etcd/clientv3

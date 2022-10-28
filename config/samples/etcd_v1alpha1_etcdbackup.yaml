@@ -3,7 +3,7 @@ kind: EtcdBackup
 metadata:
   name: etcdbackup-sample
 spec:
-  etcdUrl: <etcd-cluster-endpoints>  # 备份的节点 etcd 地址
+  etcdUrl: <etcd-cluster-endpoints>  # 备份的节点 etcd 地址  分布式,备份一个节点就够了
     storageType: s3  # 指定备份类型
     s3:
       path: "foo-bucket/snapshot.db"  # 数据存放目录

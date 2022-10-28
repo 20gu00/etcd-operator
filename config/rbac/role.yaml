@@ -21,6 +21,15 @@ rules:
 - apiGroups:
   - ""
   resources:
+  - pods
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ""
+  resources:
   - services
   verbs:
   - create
@@ -46,6 +55,26 @@ rules:
   - etcd.cjq.io
   resources:
   - etcdclusters/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - etcd.ydzs.io
+  resources:
+  - etcdbackups
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - etcd.ydzs.io
+  resources:
+  - etcdbackups/status
   verbs:
   - get
   - patch
